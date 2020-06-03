@@ -1,0 +1,475 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Kayıt Ekleme</title> 
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                margin: 0;
+                padding: 0;
+            }
+            header{
+                border: 1px solid black;
+                width: 100%;
+                height: 120px;
+                background-color: #2a4173;
+            }
+            #hizala{
+
+                width: 75%;
+
+                margin: auto;
+                margin-top: 25px;
+            }
+            #solkisim{
+
+                width: 25%;
+                height: 100px;
+                float: left;
+            }
+            #solkisim a{
+                color: #C0bab6;
+                text-decoration: none;
+                font-size: 25px;
+            }
+            #solkisim h1{
+                padding: 0px;
+                margin: 0px;
+            }
+            #solkisim p{
+                padding: 0px;
+                margin: 0px;
+                color:  #C0bab6;
+                font-size: 16px;
+            }
+            #sagkisim{
+
+                width: 75%;
+                height: 100px;
+                float: left;
+
+            }
+            
+            #logo{
+                border: 0px solid #ffff66;
+                width: 12%;
+                height: 110px;
+                float: left;
+                margin-top: 0px;
+            }
+
+            #logo img{
+                margin-left: 40px;
+                width: 110px;
+                height: 110px;
+
+            }
+            nav{
+                float: right;
+                padding-top: 30px;
+            }
+            nav ul{
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+            }
+            nav ul li {
+                border: 1px solid #2a4173;
+                display: inline-block;
+                background-color: #2a4173;
+                padding: 10px 15px;
+                margin-left: 5px;
+                float: left;
+                border-bottom-color: #dedfe0;
+            }
+            nav ul li a{
+                color: #C0bab6;
+                font-size: 18px;
+                text-decoration: none;
+            }
+            nav ul li a:hover{
+                color: #9b1b30;
+            }
+            main{
+                <!--border: 5px solid red;-->
+                width: 100%;
+                height: auto;
+            }
+            #hizalatwo{
+                border: 0px solid black;
+                width: 75%;
+                height: auto;
+                margin: auto;
+                padding: 25px 0;
+            }
+            #sectionone{
+                border: 0px solid blue;
+                width: 100%;
+                height: 360px;
+                background-color: #333333;
+                padding-top: 120px;
+            }
+            #sectionone h1{
+                color: white;
+                font-size: 30px;
+                text-align: center;
+            }
+            #sectiontwo{
+                border: 0px solid blue;
+                width: 100%;
+                height: 400px;
+                padding-top:25px ;
+            }
+            #box{
+                border: 0px solid black;
+                width: 30%;
+                height: auto;
+                float: left;
+                margin-right: 55px;
+
+
+            }
+            .cerceve{
+                border: 2px solid black;
+                width: 100%;
+                height: 180px;
+                padding: 1px;
+            }
+            .resim{
+
+                background-color: #333333;
+                width: 100%;
+                height: 172px;
+                padding-top: 65px;
+            }
+            .resim h1{
+                color: white;
+                font-size: 32px;
+                text-align: center;
+                padding: 0px;
+                margin: 0;
+            }
+            #box h4{
+                padding: 0;
+                margin: 0;
+                margin-top: 12px;
+            }
+            #box p {
+                color: #333333;
+            }
+            .linkAyar{
+                float: right;
+                margin-right: 20px;
+                color: #9b1b30;
+            }
+            .linkAyar:hover{
+                text-decoration: none;
+                text-transform: capitalize ;
+            }
+            #sectionthree{
+                border: 0px solid black;
+                width: 100%;
+                height: 320px;
+            }
+            #partone{
+                border: 0px solid black;
+                width: 50%;
+                height: 300px;
+                float: left;
+            }
+            #partone p{
+                font-size: 16px;
+                line-height: 23px;
+            }
+            #parttwo{
+                border: 2px solid #333333;
+                width: 50%;
+                height: 300px;
+                float: left;
+                padding: 2px;
+            }
+            #resimtwo{
+                background-color: #333333;
+                width: 100%;
+                height: 290px;
+                padding-top: 137px;
+            }
+            #resimtwo h1{
+                color: white;
+                padding: 0;
+                margin: 0;
+                text-align: center;
+                font: 35px;
+            }
+            footer{
+                border: 0px solid black;
+                margin: 0;
+                bottom: 0px;
+                height: 300px;
+                background-color: #2a4173;
+                
+            }
+            .gazi-logo-footer {
+                background: no-repeat;
+                height: 450px;
+                z-index: 300;
+                top: 20px;
+                left: -120px;
+                position: relative;
+                background-size: 85% auto;
+            }
+            #partfirst{
+
+                width: 33.3%;
+                height: 300px;
+                float: left ;
+                overflow: hidden;
+            }
+             #part{
+
+                width: 33.3%;
+                height: 300px;
+                float: left ;
+            }
+            #part ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            #part li{
+                margin-top: 6px;
+
+            }
+            #part a{
+                color: white;
+                text-decoration: none;
+                font-size: 18px;
+            }
+            #iconOne{
+                border: 0px solid black;
+                width: 70px;
+                height: 70px;
+                float: left;
+                margin-right: 15px;
+                margin-left: 120px;
+                margin-top: 100px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-image: url(https://image.flaticon.com/icons/png/512/1051/1051309.png);
+            }
+            #iconOne:hover{
+                background-image: url(https://image.flaticon.com/icons/png/512/1051/1051258.png);
+            }
+
+            #iconTwo{
+                border: 0px solid black;
+                padding: 0; margin: 0;
+                width: 70px;
+                height: 70px;
+                float: left;
+                margin-right: 15px;
+                margin-top: 100px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                
+                background-image: url(https://image.flaticon.com/icons/png/512/1077/1077042.png);
+            }
+            #iconTwo:hover{
+                background-image: url(https://image.flaticon.com/icons/png/512/1384/1384063.png);
+            }
+            
+            #iconThree{
+                border: 0px solid black;
+                padding: 0; margin: 0;
+                width: 70px;
+                height: 70px;
+                float: left;
+                margin-right: 15px;
+                margin-top: 100px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                
+                background-image: url(https://image.flaticon.com/icons/png/512/123/123728.png);
+            }
+            #iconThree:hover{
+                background-image: url(https://image.flaticon.com/icons/png/512/124/124021.png);
+            }
+            
+            #iconFour{
+                border: 0px solid black;
+                padding: 0; margin: 0;
+                width: 70px;
+                height: 70px;
+                float: left;
+                margin-right: 15px;
+                margin-top: 100px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                
+                background-image: url(https://image.flaticon.com/icons/svg/3003/3003388.svg);
+            }
+            #iconFour:hover{
+                background-image: url(https://image.flaticon.com/icons/svg/3003/3003511.svg);
+            }
+
+        </style>
+        <h:outputStylesheet library="css" name="bootstrap.css" />
+    </h:head>
+    <h:body>
+        <header>
+            
+             <div id="logo">
+                <img src="http://icons.iconarchive.com/icons/joker-design/android/128/document-icon.png " style="background-size: 455px 220px;" ></img>
+
+            </div>
+            
+            <div id="hizala">
+                <div id="solkisim">
+                    <a href="a"><h1>DKS</h1></a>
+                    <p>DERS KAYIT SİSTEMİ</p>
+                </div>
+
+                <div id="sagkisim">
+                    <nav>
+                        <ul>
+                            <li><a href="http://localhost:8084/DersOtomasyon2/faces/mainMenu_Admin.xhtml">Ana Sayfa</a></li>
+                            <li><a href="http://localhost:8084/DersOtomasyon2/faces/dersEkle.xhtml">Ders Ekle</a></li>                     
+                            <li><a href="http://localhost:8084/DersOtomasyon2/faces/kayit.xhtml">Kayıt Ekle</a></li>
+                            <li><a href="http://localhost:8084/DersOtomasyon2/faces/hocaEkle.xhtml">Öğretim Elemanı Ekle</a></li>
+                            <li><a href="http://localhost:8084/DersOtomasyon2/faces/index.xhtml" style="color: blue">ÇIKIŞ</a></li>
+                        </ul>
+
+                    </nav>
+                </div>
+
+            </div>
+        </header>
+
+        <main>
+            <div id="hizalatwo">
+                <h:form id="form">
+
+                    <p:growl id="growl" showDetail="true" sticky="true" /> 
+
+                   
+
+                    <p:panel id="ilkPanel" header="Öğretim Elemanı Kayıt" toggleable="true" closable="true" toggleSpeed="500" closeSpeed="500" widgetVar="panel_1" style="margin-bottom:20px">
+                        <h:panelGrid id="gerekliAlanlar" columns="2" styleClass="ui-noborder" >
+                            <h:outputText value="İsim :" />
+                            <h:inputText class="form-control" id="isim" value="#{hocaBean.isim}" style="text-transform: capitalize" onkeypress="if (event.which &lt; 47 || event.which &gt; 58) return true; else return false;" />
+
+                            <h:outputText value="Soyisim:" />
+                            <h:inputText class="form-control" id="soyisim" value="#{hocaBean.soyisim}" style="text-transform: capitalize" onkeypress="if (event.which &lt; 47 || event.which &gt; 58) return true; else return false;" />
+
+                            <h:outputText  value="Ünvan"/>
+                            <h:selectOneMenu class="form-control" id="unvan" value="#{hocaBean.unvan}" >   
+                                <f:selectItem itemLabel="Birini seçin"  itemValue=""/>
+                                <f:selectItem itemLabel="Prof.Dr."  itemValue="Prof.Dr."/>
+                                <f:selectItem itemLabel="Doç.Dr."  itemValue="Doç.Dr."/> 
+                                <f:selectItem itemLabel="Dr.Öğr.Üyesi"  itemValue="Dr.Öğr.Üyesi"/> 
+                                <f:selectItem itemLabel="Öğretim Görevlisi"  itemValue="Öğretim Görevlisi"/> 
+                                <f:selectItem itemLabel="Arş.Gör."  itemValue="Arş.Gör."/> 
+                            </h:selectOneMenu>
+
+                            <h:outputText  value="Cinsiyet"/>
+                            <h:selectOneRadio class="form-control" id="cinsiyet" value="#{hocaBean.cinsiyet}" >   
+                                <f:selectItem itemLabel="Kadın"  itemValue="Kadın"/>
+                                <f:selectItem itemLabel="Erkek"  itemValue="Erkek"/>    
+                            </h:selectOneRadio>
+
+                            <h:outputText  value="Bilim Dalı"/>
+                            <h:selectOneMenu class="form-control" id="bolum" value="#{hocaBean.bilimDali}" > 
+                                <f:selectItem itemLabel="Birini seçin"  itemValue=""/>
+                                <f:selectItem itemLabel="Bilgisayar Mühendisliği"  itemValue="Bilgisayar Mühendisliği"/>
+                                <f:selectItem itemLabel="Elektrik-Elektronik Mühendisliği"  itemValue="Elektrik-Elektronik Mühendisliği"/> 
+                                <f:selectItem itemLabel="Endüstriyel Tasarım Mühendisliği"  itemValue="Endüstriyel Tasarım Mühendisliği"/> 
+                                <f:selectItem itemLabel="Enerji Sistemlemleri Mühendisliği"  itemValue="Enerji Sistemlemleri Mühendisliği"/> 
+                                <f:selectItem itemLabel="İnşaat Mühendisliği"  itemValue="İnşaat Mühendisliği"/> 
+                            </h:selectOneMenu>
+
+                            
+                            <br></br>
+                            <br></br>
+                            <br></br>
+                            <p:commandButton class="btn btn-success" value="Kaydet" style="width: 100%" action="#{hocaBean.hocaKaydet()}" update=":form :form:guncellenecek" />              
+                        </h:panelGrid>
+                    </p:panel>
+
+                    <p:panel id="ikinciPanel" header="TABLO" toggleable="true" closable="true" toggleSpeed="500" closeSpeed="500" widgetVar="panel_2" style="margin-bottom:20px" >
+                        <p:outputPanel  id="guncellenecek">
+                            <p:dataTable  class="table table-hover table table-striped" id="tablo" value="#{hocaBean.listcek}" var="hoca" selectionMode="single" 
+                                         selection="#{hocaBean.selectedHoca}" rowKey="#{hoca.isim}">
+
+                                <p:column headerText="No" style="width:5%;" >
+                                    <h:outputText class="form-control" value="#{hoca.id}"  />
+                                </p:column>   
+                                <p:column headerText="Ünvan" style="width:18%">
+                                    <h:outputText value="#{hoca.unvan}" />
+                                </p:column>
+                                <p:column headerText="İsim" style="width:18%">
+                                    <h:outputText value="#{hoca.isim}" />
+                                </p:column>
+                                <p:column headerText="Soyisim" style="width:18%">
+                                    <h:outputText value="#{hoca.soyisim}"/>
+                                </p:column>
+                                <p:column headerText="Cinsiyet" style="width:10%">
+                                    <h:outputText value="#{hoca.cinsiyet}" />
+                                </p:column>
+                                <p:column headerText="Bilim Dalı" style="width:32%">
+                                    <h:outputText value="#{hoca.bilimDali}" />
+                                </p:column>  
+                            </p:dataTable>
+                        </p:outputPanel>
+
+                        <p:commandButton class="btn btn-danger" value="Sil" action="#{hocaBean.onay()}" update=":form" >
+                            <p:confirm header="Onayla" message="Seçili öğretim görevlisi silinecek onaylıyor musunuz?"/>
+                        </p:commandButton>
+
+                        <p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+                            <p:commandButton style="width: 48%" value="Evet" type="button" styleClass="ui-confirmdialog-yes"  />
+                            <p:commandButton style="width: 48%" value="Hayır" type="button" styleClass="ui-confirmdialog-no"  />
+                        </p:confirmDialog>
+
+                    </p:panel>  
+                </h:form>
+            </div>
+        </main>
+
+        <footer>
+            <div id="hizalaindex">
+
+                <div id="partfirst" >
+                    <img class="gazi-logo-footer" src="https://cdn.gazi.edu.tr/gazi2017/img/gazi_logo_footer.svg"  ></img>
+
+                </div>
+
+                <div id="part">
+                    <img src="https://cdn.gazi.edu.tr/gazi2017/img/rektorluk_binasi_footer.svg" style="background-size: 455px 220px;" ></img>
+
+                </div>
+
+                <div id="part">
+                     
+                    
+                        <a href="https://tr-tr.facebook.com/GaziUniversitesi/" id="iconOne"></a>
+                    
+                        <a href="https://www.instagram.com/gazi_universitesi/?hl=tr" id="iconTwo"></a>
+                        
+                        <a href="https://twitter.com/Gazi_Universite" id="iconThree"></a>
+                        
+                        <a href="http://gazi.edu.tr/" id="iconFour"></a>
+                       
+                         
+                </div>
+
+            </div>
+
+        </footer>
+    </h:body>
+</html>

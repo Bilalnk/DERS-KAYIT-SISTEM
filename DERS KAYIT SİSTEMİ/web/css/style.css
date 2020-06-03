@@ -1,0 +1,233 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+header{
+  border: 1px solid black;
+  width: 100%;
+  height: 120px;
+  background-color: #333333;
+}
+#hizala{
+
+  width: 75%;
+
+  margin: auto;
+  margin-top: 25px;
+}
+#solkisim{
+
+  width: 30%;
+  height: 100px;
+  float: left;
+}
+#solkisim a{
+  color: #C0bab6;
+  text-decoration: none;
+  font-size: 25px;
+}
+#solkisim h1{
+  padding: 0px;
+  margin: 0px;
+}
+#solkisim p{
+  padding: 0px;
+  margin: 0px;
+  color:  #C0bab6;
+  font-size: 16px;
+}
+#sagkisim{
+
+  width: 70%;
+  height: 100px;
+  float: left;
+
+}
+nav{
+  float: right;
+  padding-top: 30px;
+}
+nav ul{
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+nav ul li{
+  display: inline-block;
+  background-color: #232323;
+  padding: 10px 30px;
+  float: left;
+}
+nav ul li a{
+   color: #C0bab6;
+   font-size: 18px;
+  text-decoration: none;
+ }
+nav ul li a:hover{
+  color: #9b1b30;
+}
+main{
+  <!--border: 5px solid red;-->
+  width: 100%;
+  height: auto;
+}
+#hizalatwo{
+  border: 0px solid black;
+  width: 75%;
+  height: auto;
+  margin: auto;
+  padding: 25px 0;
+}
+#sectionone{
+  border: 0px solid blue;
+  width: 100%;
+  height: 360px;
+  background-color: #333333;
+  padding-top: 120px;
+}
+#sectionone h1{
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+#sectiontwo{
+  border: 0px solid blue;
+  width: 100%;
+  height: 400px;
+  padding-top:25px ;
+}
+#box{
+  border: 0px solid black;
+  width: 30%;
+  height: auto;
+  float: left;
+  margin-right: 55px;
+
+
+}
+.cerceve{
+  border: 2px solid black;
+  width: 100%;
+  height: 180px;
+  padding: 1px;
+}
+.resim{
+
+  background-color: #333333;
+  width: 100%;
+  height: 172px;
+  padding-top: 65px;
+}
+.resim h1{
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  padding: 0px;
+  margin: 0;
+}
+#box h4{
+  padding: 0;
+  margin: 0;
+  margin-top: 12px;
+}
+#box p {
+  color: #333333;
+}
+.linkAyar{
+  float: right;
+  margin-right: 20px;
+  color: #9b1b30;
+}
+.linkAyar:hover{
+  text-decoration: none;
+  text-transform: capitalize ;
+}
+#sectionthree{
+  border: 0px solid black;
+  width: 100%;
+  height: 320px;
+}
+#partone{
+  border: 0px solid black;
+  width: 50%;
+  height: 300px;
+  float: left;
+}
+#partone p{
+  font-size: 16px;
+  line-height: 23px;
+}
+#parttwo{
+  border: 2px solid #333333;
+  width: 50%;
+  height: 300px;
+  float: left;
+  padding: 2px;
+}
+#resimtwo{
+  background-color: #333333;
+  width: 100%;
+  height: 290px;
+}
+#resimtwo h1{
+  color: white;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font: 35px;
+}
+footer{
+  border: 2px solid black;
+  margin: 0;
+  height: 300px;
+  background-color: #333333;
+}
+#part{
+
+  width: 33.3%;
+  height: 300px;
+  float: left ;
+}
+#part ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#part li{
+  margin-top: 6px;
+
+}
+#part a{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+#iconOne{
+  border: 1px solid black;
+  width: 70px;
+  height: 70px;
+  float: left;
+  margin-right: 15px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("");
+}
+#iconOne:hover{
+  background-image: url("tile.png");
+}
+
+#iconTwo{
+  border: 1px solid black;
+  padding: 0; margin: 0;
+  float: left;
+  margin-right: 15px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("");
+}
+#iconTwo:hover{
+  background-image: url("");
+}
