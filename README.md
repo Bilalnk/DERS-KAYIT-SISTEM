@@ -2,4 +2,7 @@
 
 Bilal Nadir KARATAŞ - 171816033
 
-"https://www.youtube.com/embed/s8DCpG1PeaU" 
+https://youtu.be/zT-9NdpPePI
+
+[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/zT-9NdpPePI)
+
