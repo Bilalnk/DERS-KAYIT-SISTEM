@@ -61,7 +61,7 @@ public class DegiskenlerveBaglanti implements Serializable {
         Connection con = null;//Veri tabanına bağlantı yapmamızı sağlayacak nesne.
         try {
             Class.forName("oracle.jdbc.OracleDriver");
-            con=DriverManager.getConnection(url, "BILALNADIR", "Bilal.197");//Bağlanacağı veri tabanını ve kullanacağı kullanıcı adı-parolayı bildiriyoruz.
+            con=DriverManager.getConnection(url, "DATABASE_NAME", "********");//Bağlanacağı veri tabanını ve kullanacağı kullanıcı adı-parolayı bildiriyoruz.
             ps = con.prepareStatement("INSERT INTO KISI_TABLO(ADI , TC ,CINSIYET, IL ,ADRES, OKUL_NUM) VALUES(?,?,?,?,?,?)");//ps nesnesine SQL komutunu bildiriyoruz.İsterseniz parametre olarak SQL kodu yerine üstteki sql de verebilirsiniz.
             ps.setString(1, isimSoyisim);//ps nesnesine gelen simi koyduk.
             ps.setString(2, tc);//ps nesnesine gelen alanı koyduk.
@@ -128,7 +128,7 @@ public class DegiskenlerveBaglanti implements Serializable {
 
         try {
            Class.forName("oracle.jdbc.OracleDriver");
-            con=DriverManager.getConnection(url, "BILALNADIR", "Bilal.197");
+            con=DriverManager.getConnection(url, "DATABASE_NAME", "********");
             PreparedStatement prepareds = con.prepareStatement("UPDATE KISI_TABLO SET ADI=?,TC=?,CINSIYET=?,IL=?,ADRES=?, OKUL_NUM=? WHERE ID=?");
 
             prepareds.setInt(6, selectedKisi.getId());
@@ -166,7 +166,7 @@ public class DegiskenlerveBaglanti implements Serializable {
         int i = 0;       
         try {
             Class.forName("oracle.jdbc.OracleDriver");
-            conn=DriverManager.getConnection(url, "BILALNADIR", "Bilal.197");
+            conn=DriverManager.getConnection(url, "DATABASE_NAME", "*******");
             pss=conn.prepareStatement("DELETE FROM KISI_TABLO WHERE ID=?");
             pss.setInt(1, selectedKisi.getId());
             i=pss.executeUpdate();
@@ -211,7 +211,7 @@ public class DegiskenlerveBaglanti implements Serializable {
         Connection con=null;//Veri tabanına bağlantı yapmamızı sağlayacak nesne.
         try {
             Class.forName("oracle.jdbc.OracleDriver");
-            con=DriverManager.getConnection(url, "BILALNADIR", "Bilal.197");
+            con=DriverManager.getConnection(url, "DATABASE_NAME", "*******");
             ps=con.prepareStatement("SELECT * FROM KISI_TABLO");
             ResultSet rs=ps.executeQuery();
             listList=new ArrayList();
