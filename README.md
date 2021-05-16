@@ -1,6 +1,6 @@
-# DERS-KAYIT-SISTEM
+# DERS-KAYIT-SISTEMI
 
-Bilal Nadir KARATAŞ - 171816033
+Bilal Nadir KARATAŞ
 
 https://youtu.be/zT-9NdpPePI
 
